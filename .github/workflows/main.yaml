@@ -12,9 +12,11 @@ jobs:
         run: echo "Checkout repository"
       - name: Build
         run: echo "Build"
-    
-  Test:
-    runs-on: ubuntu-latest
-    steps:
       - name: Test
-        run: test
+        run: echo "Testing"
+      - name: Create environment
+        run: echo "Create environment"
+      - name: Deploy
+        run: echo "Deploy"
+      - name: Smoke test
+        run: echo "Smoke test"
